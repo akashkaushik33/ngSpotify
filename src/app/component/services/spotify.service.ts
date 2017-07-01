@@ -23,7 +23,7 @@ export class SpotifyService{
        // let params : URLSearchParams = new URLSearchParams();
        // params.set('grant_type' , 'client_credentials');
        // let body = params.toString();
-         let params = ('grant_type=client_credentials')
+        let params = ('grant_type=client_credentials')
 
         let headers = new Headers();
         headers.append( 'Authorization', 'Basic ' + this.encoded);
