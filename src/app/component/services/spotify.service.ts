@@ -85,7 +85,7 @@ export class SpotifyService{
        headers.append('Authorization' , 'Bearer ' + token);
 
        return this._http.get(this.AlbumUrl , {headers : headers})
-       .map((res: Response) => res.json())
+        .map((res: Response) => res.json())
     
    }
 
