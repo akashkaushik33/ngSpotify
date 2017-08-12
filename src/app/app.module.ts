@@ -8,7 +8,7 @@ import { AlbumComponent } from "./component/album/album.component";
 import { SearchComponent } from "./component/search/search.component";
 import { AppComponent }  from './app.component';
 import { FormsModule } from "@angular/forms";
-import { HttpModule } from "@angular/http";
+import { HttpModule ,JsonpModule} from "@angular/http";
 import { SpotifyService  } from "./component/services/spotify.service";
 import { RouterModule, Routes } from '@angular/router';
 
@@ -21,7 +21,7 @@ const routes : Routes = [
 ];
 
 @NgModule({
-  imports:      [ BrowserModule , RouterModule.forRoot(routes) ,FormsModule , HttpModule],
+  imports:      [ BrowserModule ,JsonpModule, RouterModule.forRoot(routes) ,FormsModule , HttpModule],
   declarations: [ AppComponent , NavbarComponent , AboutComponent, SearchComponent , ArtistComponent ,AlbumComponent],
   providers: [SpotifyService],
   bootstrap:    [ AppComponent ]

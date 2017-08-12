@@ -23,9 +23,9 @@ export class SpotifyService{
        // let params : URLSearchParams = new URLSearchParams();
        // params.set('grant_type' , 'client_credentials');
        // let body = params.toString();
-        let params = ('grant_type=client_credentials')
+        var params = ('grant_type=client_credentials');
 
-        let headers = new Headers();
+        var headers = new Headers();
         headers.append( 'Authorization', 'Basic ' + this.encoded);
        
         headers.append('Content-Type' , 'application/x-www-form-urlencoded');
@@ -36,7 +36,7 @@ export class SpotifyService{
 
         
     
-   searchMusic(str:string, type='artist' ,token:string){
+     searchMusic(str:string, type='artist' ,token:string){
      
         
        console.log(this.encoded); 
