@@ -1,12 +1,12 @@
 <div id="album" *ngIf="album">
         <header class="album-header">
             <div class="row">   
-              <div class="col-md-4">
+              <div class="col-md-6">
                   <div *ngIf="album.images.length > 0">
                       <img src="{{album.images[0].url}}" class="album-thumb">
                   </div>
               </div>
-              <div class="col-md-8">
+              <div class="col-md-5">
                     <h4 *ngIf="album.artists.length > 0"><span *ngFor="let artist of album.artists">
                       {{artist.name}}
                     </span></h4>
@@ -16,9 +16,9 @@
               </div>
             </div>
         </header>
-        <div class="album-tracks">
+        <div class="album-tracks mt-4">
           <h2>Album Tracks</h2>
-          <div *ngFor="let track of album.tracks.items">
+          <div class="mt-3 ml-lg-2" *ngFor="let track of album.tracks.items">
               <div class="well">
                 <h5>{{track.track_number}} - {{track.name}}</h5>
                 <a href="{{track.external_urls.spotify}}" target="_blank">Listen Track</a>

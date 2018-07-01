@@ -1,0 +1,30 @@
+.h-50 {
+  min-height: 50px;
+ }
+ 
+ body {
+   color: #259466;
+   background: linear-gradient(to right,#2b5876,  #4e4376)
+   /* background: linear-gradient(to right,#8360c3,  #2ebf91) */
+ }
+ h1 {
+   /* background: -webkit-linear-gradient(#eee, #333); */
+     background: -webkit-linear-gradient(#59C173,#a17fe0, #5D26C1);
+      font-size: 50px;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+ h2 {
+  background: -webkit-linear-gradient(#59C173,#a17fe0, #5D26C1);
+  font-size: 30px;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+ h4 {
+   font-size: 22px
+ }
+ 
+ .list-group-item {
+   border: none;
+   background: transparent
+ }
